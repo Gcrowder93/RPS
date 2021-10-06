@@ -2,12 +2,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
     text-align: center;
+    background-image: url(/assets/rps\ background.jpeg);
+    font-family: 'Mouse Memoirs';
+ 
 }
 
-label {
-    flex-direction: row;
+h1 { 
+    margin: 20px;
+    background-color: rgb(255, 166, 1);
+    box-shadow: 2px 1px 1px 2px;
+    border-radius: 15%;
+}
+
+#choice {
+    line-height: 1.5em;
+}
+
+span {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 4px 4px;
+    font-family: 'Mouse Memoirs';
+    font-size: 25px;
+    box-sizing: content-box;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+#error {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: darkslategray;
+    border-radius: 3px 3px;
+    box-shadow: 1px 1px 1px;
 }
 
 input[type=radio]{
@@ -21,16 +54,36 @@ input[type=radio]:checked + .label{
 }
 
 input[type=radio]:checked + img{
-    border: solid 5px darkslategray;
+    border: solid 5px black;
     filter: grayscale(0%);
 }
 
 img {
-    height: 100px;
-    width: 125px;
+    height: 90px;
+    width: 120px;
+}
+
+#submit {
+    font-size: large;
+    width: 9em;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 4px 4px;
+
+}
+
+#wins, #loses{
+    background-color: lightcyan;
+    color: black;
+}
+
+p {
+    font-size: 2em;
+    background-color: red;
+    margin: 5px;
 }
 
 label:hover {
     cursor: pointer;
     font-weight: bold;
 }
+

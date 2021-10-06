@@ -1,4 +1,3 @@
-
 describe('Example Test', ()=>{
     before(()=>{
         cy.visit('/');
