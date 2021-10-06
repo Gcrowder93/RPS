@@ -1,6 +1,36 @@
-main {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+label {
+    flex-direction: row;
+}
+
+input[type=radio]{
+     display: none;
+}
+
+input[type=radio]:checked + .label{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type=radio]:checked + img{
+    border: solid 5px darkslategray;
+    filter: grayscale(0%);
+}
+
+img {
+    height: 100px;
+    width: 125px;
+}
+
+label:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
