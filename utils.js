@@ -31,3 +31,18 @@ export function didUserLose(userThrow, compThrow){
         return 'losses';
     }
 }
+
+export function didUserDraw(userThrow, compThrow){
+    if (userThrow === compThrow) {
+        return 'draw';
+    }
+    else if (userThrow === 'rock' && compThrow === 'rock'){
+        return 'draw';
+    }
+    else if (userThrow === 'paper' && compThrow === 'paper'){
+        return 'draw';
+    }
+    else if (userThrow === 'scissors' && compThrow === 'scissors'){
+        return 'draw';
+    }
+}

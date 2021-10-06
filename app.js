@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { didUserWin, getRandomThrow, didUserLose } from './utils.js';
+import { didUserWin, getRandomThrow, didUserLose,didUserDraw } from './utils.js';
 const submitButton = document.getElementById('submit');
 const winSpan = document.getElementById('wins');
 const lossSpan = document.getElementById('losses');
@@ -18,16 +18,19 @@ submitButton.addEventListener('click', ()=>{
     error.classList.add('hidden');
     const userThrow = selected.value;
     const compThrow = getRandomThrow();
-
+// rock loss works; if win, loss and win goes up; draw doesnt work
+// paper win works; if loss, loss and win goes up; draw doesnt work
+// scissor loss and win works; draw doesnt
     if (didUserWin(userThrow, compThrow)){
         wins++;
     } 
-    if (didUserLose(userThrow)){
+    if (didUserLose(userThrow, compThrow)){
         losses++;
     }
-  
+    if (didUserDraw)
     
-    winSpan.textContent = wins;
+        winSpan.textContent = wins;
     lossSpan.textContent = losses;
     drawSpan.textContent = draws;
+
 });
