@@ -18,18 +18,17 @@ submitButton.addEventListener('click', ()=>{
     error.classList.add('hidden');
     const userThrow = selected.value;
     const compThrow = getRandomThrow();
-// rock loss works; if win, loss and win goes up; draw doesnt work
-// paper win works; if loss, loss and win goes up; draw doesnt work
-// scissor loss and win works; draw doesnt
-    if (didUserWin(userThrow, compThrow)){
+// rock 'win' doesnt work
+// paper 'loss' doesnt work
+// scissor 'draw' doesnt
+    if (userThrow === compThrow){
+        draws++;
+    } else if (didUserWin(userThrow, compThrow)){
         wins++;
-    } 
-    if (didUserLose(userThrow, compThrow)){
+    } else {
         losses++;
     }
-    if (didUserDraw)
-    
-        winSpan.textContent = wins;
+    winSpan.textContent = wins;
     lossSpan.textContent = losses;
     drawSpan.textContent = draws;
 
