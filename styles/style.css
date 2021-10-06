@@ -11,8 +11,9 @@ body {
 
 h1 { 
     margin: 20px;
-    background-color: rgb(255, 166, 1);
-    box-shadow: 2px 1px 1px 2px;
+    color: rgb(255, 166, 1);
+    background-color: black;
+    box-shadow: 1px 1px 1px 2px white;
     border-radius: 15%;
 }
 
@@ -22,7 +23,7 @@ h1 {
 
 span {
     background-color: white;
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 1px 1px ;
     border-radius: 4px 4px;
     font-family: 'Mouse Memoirs';
     font-size: 25px;
@@ -35,10 +36,10 @@ span {
 }
 
 #error {
-    color: white;
-    font-size: 1.5em;
+    color: black;
+    font-size: 2em;
     font-weight: bold;
-    background-color: darkslategray;
+    background-color: red;
     border-radius: 3px 3px;
     box-shadow: 1px 1px 1px;
 }
@@ -68,17 +69,24 @@ img {
     width: 9em;
     box-shadow: 1px 1px 1px 1px;
     border-radius: 4px 4px;
+    background-color: lightgray
 
 }
 
-#wins, #loses{
-    background-color: lightcyan;
+#wins, #losses, #draws{
+    font-size: 1em;
+    background-color: white;
     color: black;
+    border-radius: 4px 4px;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 p {
+    color: rgb(255, 166, 1);
+    background-color: black;
+    box-shadow: 2px 1px 1px 2px white;
+    border-radius: 15%;
     font-size: 2em;
-    background-color: red;
     margin: 5px;
 }
 
