@@ -1,5 +1,5 @@
 export function getRandomThrow(){
-    return ['rock', 'paper', 'scissors'][Math.round(Math.random())];
+    return ['rock', 'paper', 'scissors'][Math.round(Math.random() * 2)];
 }
 
 export function didUserWin(userThrow, compThrow){
@@ -17,32 +17,3 @@ export function didUserWin(userThrow, compThrow){
     }
 }
 
-export function didUserLose(userThrow, compThrow){
-    if (userThrow === compThrow) {
-        return 'draw';
-    }
-    else if (userThrow === 'rock' && compThrow === 'paper') {
-        return 'losses';
-    }
-    else if (userThrow === 'paper' && compThrow === 'scissors') {
-        return 'losses';
-    }
-    else if (userThrow === 'scissors' && compThrow === 'rock') {
-        return 'losses';
-    }
-}
-
-export function didUserDraw(userThrow, compThrow){
-    if (userThrow === compThrow) {
-        return 'draw';
-    }
-    else if (userThrow === 'rock' && compThrow === 'rock'){
-        return 'draw';
-    }
-    else if (userThrow === 'paper' && compThrow === 'paper'){
-        return 'draw';
-    }
-    else if (userThrow === 'scissors' && compThrow === 'scissors'){
-        return 'draw';
-    }
-}
