@@ -19,9 +19,7 @@ submitButton.addEventListener('click', ()=>{
     const userThrow = selected.value;
     const compThrow = getRandomThrow();
     console.log(userThrow, compThrow);
-// rock 'win' doesnt work
-// paper 'loss' doesnt work
-// scissor 'draw' doesnt
+
     if (userThrow === compThrow){
         draws++;
     } else if (didUserWin(userThrow, compThrow)){
