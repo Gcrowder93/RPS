@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    background-image: url(/assets/rps\ background.jpeg);
+    background-image: url(/assets/rpsbackground.jpeg);
     font-family: 'Mouse Memoirs';
 }
 
