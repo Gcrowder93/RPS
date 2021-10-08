@@ -1,8 +1,46 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-//import { didUserWin } from '../utils';
+// import { didUserWin } from '../utils';
+
+import { didUserWin } from "'../utils";
 
 const test = QUnit.test;
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('rock', 'scissors');
+    const expected = true;
+    expect.equal (actual, expected, 'should be a win');
+});
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('rock', 'paper');
+    const expected = false;
+    expect.equal(actual, expected, 'should be a loss');
+});
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('paper', 'scissors');
+    const expected = false;
+    expect.equal(actual, expected, 'should be a loss');
+});
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('paper', 'rock');
+    const expected = true;
+    expect.equal(actual, expected, 'should be a win');
+});
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('scissor', 'rock');
+    const expected = false;
+    expect.equal(actual, expected, 'should be a loss');
+});
+
+test('testing didUserWin', (expect) => {
+    const actual = didUserWin('scissor', 'paper');
+    const expected = false;
+    expect.equal(actual, expected, 'should be a loss');
+});
 
 test('time to test a function', (expect) => {
     //Arrange
