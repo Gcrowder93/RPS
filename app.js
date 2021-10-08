@@ -10,6 +10,7 @@ let wins = 0;
 let losses = 0;
 let draws = 0;
 
+
 submitButton.addEventListener('click', ()=>{
     const selected = document.querySelector('input[type=radio]:checked');
     if (!selected){

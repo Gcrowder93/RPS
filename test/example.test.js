@@ -2,7 +2,8 @@
 // import { example } from '../example.js';
 // import { didUserWin } from '../utils';
 
-import { didUserWin } from "'../utils";
+import { didUserWin } from "'../utils.js";
+
 
 const test = QUnit.test;
 
