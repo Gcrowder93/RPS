@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { didUserWin, getRandomThrow } from './utils.js';
+import { didUserWin, getRandomThrow } from '../utils.js';
 const submitButton = document.getElementById('submit');
 const winSpan = document.getElementById('wins');
 const lossSpan = document.getElementById('losses');
@@ -19,7 +19,6 @@ submitButton.addEventListener('click', ()=>{
     error.classList.add('hidden');
     const userThrow = selected.value;
     const compThrow = getRandomThrow();
-    console.log(userThrow, compThrow);
 
     if (userThrow === compThrow){
         draws++;
@@ -33,3 +32,4 @@ submitButton.addEventListener('click', ()=>{
     drawSpan.textContent = draws;
 
 });
+
